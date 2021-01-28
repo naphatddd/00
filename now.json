@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds": [{ "src": "./routes/product.js", "use": "@now/node-server" }],
+    "routes": [
+      {
+        "src": "/product",
+        "dest": "./routes/product.js",
+        "methods": ["GET"]
+      },
+      {
+        "src": "/product",
+        "dest": "./routes/product",
+        "methods": ["POST"]
+      }
+    ]
+  }
